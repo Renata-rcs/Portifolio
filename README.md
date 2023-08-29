@@ -8,12 +8,7 @@ Atualmente estou aprendendo HTML, CSS e JS
 
 Procuro colaborar em projetos incríveis
 
-Sejam bem vindos ao meu portifolio, espero que goste dos meus projetos.
+Sejam bem vindos ao meu portifolio, espero que gostem dos meus projetos.
 
-[Inicio](./index.html)
+[Portiflio](./index.html)
 
-[Sobre mim](./sobre.html)
-
-[Projetos](./projetos.html)
-
-[Habilidades](./habilidades.html)
