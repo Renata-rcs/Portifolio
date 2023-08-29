@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rc-Portfólio</title>
+    
+<style>
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        body{
+            background-color:black;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-between;/*Divide os espaços = justify-content: space-around; e deixa colado nas laterais da página= justify-content: space-between; */
+            font-family:Arial, Helvetica, sans-serif ;
+            border-bottom: 1px solid black;
+            font-weight: bold;/*largura da font-family*/
+            height: 30px;
+            align-items: center;
+            background-color:black;
+            padding: 20px;
+            border-bottom: rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+        }
+        a:hover{
+            background-color: gray;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            min-height: 80vh; /* Define uma altura mínima de 80% da altura da tela */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(184, 179, 179, 0.705);
+            color: white; /* Ou outra cor legível */
+            margin-bottom: 20px;
+            position: relative;
+            background-color: rgba(148, 131, 134, 0.144);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh; /* Ou outra altura mínima */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: white; /* Ou outra cor legível */
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+       
+        h2 {
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-right: 20px;
+        }
+        .sobre{
+            padding: 10px;
+            margin: 20px;
+        }
+        h1{
+             color: rgb(233, 10, 158);
+            }
+        
+        #principal{
+                display: flex;
+                justify-content: center;
+            }
+        #fotore{
+            border-radius: 50%;
+            width: 150px;
+        }
+        .div1, .div2{
+               align-items: center;
+   
+       }
+     
+        .tecnologias{
+            text-align: center;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        .projetos-lista {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0;
+        }
+
+        .projeto-item {
+            width: calc(33.33% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .projeto-titulo {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color:rgb(233, 10, 158);
+        }
+
+        .em-brever {
+            font-size: 14px;
+            color: gray;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        footer a {
+            margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav style="margin-left: 30px;">
+            <a href="#" style="font-size: 2em;"><h1>Portfólio</h1></a>
+        </nav>
+        <nav style="margin-left: 30px;">
+            <a href="#inicio"><small>Inicio</small></a>
+            <a href="#sobre"><Small>Sobre</Small></a>
+            <a href="#tecnologias"><small>Tecnologias</small></a>
+            <a href="#projetos"><small>Projetos</small></a>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="center-content" id="inicio">
+            <h2>Início</h2>
+            <br>
+            <br>
+            <div id="principal">
+        
+                <div class="div1" >  
+                  <p><small>Oii me chamo</small><br>
+                <b style="font-size: 200%; color: rgb(233, 10, 158);" >Renata Carvalho.</b><br>
+            <small>Sou estudante de ADS</small></p>
+                </div>
+                <div class="div2">
+                    <img id="fotore" src="./imagens/image0.jpeg" width="500px" style="border-radius: 50%; margin-left: 75px;">
+                </div>
+               </div> 
+        </section>
+    
+        <section class="center-content" id="sobre">
+            <h2>Sobre</h2>
+            <br>
+            <br>
+            <div style="text-align: center; width: 50%; margin: 0 auto;">
+            <p>Olá, meu nome é <b>Renata Carvalho</b> e sou estudante de Análise e Desenvolvimento de Sistemas. Iniciei minha jornada na área de tecnologia com entusiasmo e curiosidade, buscando constantemente expandir meus conhecimentos e habilidades.</p>
+            <p>Minha paixão por resolver problemas e criar soluções levou-me a mergulhar no mundo da programação. Estou constantemente aprendendo e explorando novas tecnologias, sempre ansiosa para enfrentar desafios que me ajudem a crescer como desenvolvedora.</p>
+            <p>Além disso, adoro colaborar em projetos e trabalhar em equipe, pois acredito que a combinação de diferentes perspectivas leva a resultados mais inovadores e eficazes. Estou comprometida em melhorar minhas habilidades a cada dia e contribuir para a criação de soluções impactantes na área da tecnologia.</p>
+           </div>
+        </section>
+    
+        <section class="center-content" id="tecnologias">
+            <h2>Tecnologias</h2>
+            <br>
+            <br>
+            <p style="text-align: center;">Aqui estão algumas das tecnologias com as quais estou trabalhando:</p>
+            <br>
+            <br>
+
+            <ul>
+                <li><img src="./imagens/html5-logo.png" width="25" height="25">HTMHL 5</li>
+                <li><img src="./imagens/css3-logo-png-transparent.png" width="25" height="25">CSS 3</li>
+                <li><img src="./imagens/javascript.png" width="25" height="25">JS</li>
+            </ul>
+                </section>
+                <section class="center-content" id="projetos">
+                    <h2>Projetos</h2>
+                    <br>
+                    <br>
+                    <ul class="projetos-lista">
+                        <li class="projeto-item">
+                            <div class="projeto-titulo">Projeto 1</div>
+                            <div class="em-brever">Em breve</div>
+                        </li>
+                        <li class="projeto-item">
+                            <div class="projeto-titulo">Projeto 2</div>
+                            <div class="em-brever">Em breve</div>
+                        </li>
+                        <li class="projeto-item">
+                            <div class="projeto-titulo">Projeto 3</div>
+                            <div class="em-brever">Em breve</div>
+                        </li>
+                        <li class="projeto-item">
+                            <div class="projeto-titulo">Projeto 4</div>
+                            <div class="em-brever">Em breve</div>
+                        </li>
+                    </ul>                    
+                </section>
+    </main>
+    <footer>
+        <div style="text-align: center; background-color: rgba(82, 79, 79, 0.096); color: white; padding: 20px; ">
+            <p><small>Renata Carvalho</small></p>
+            <br>
+            <p><small>Contatos:</small></p>
+            <br>
+            <p><small>
+                <a href="tel:+5561982655395"><img src="./imagens/whatsapp-logo-1-1.png" alt="Telefone" width="25" height="25" style="margin-right: 10px;"></a>
+                <a href="https://www.instagram.com/renata_rcs"><img src="imagens/inst.png" alt="Instagram" width="25" height="25" style="margin-right: 10px;"></a> 
+                <a href="renata.rcs@gamil.com"><img src="./imagens/Email-Symbol-PNG-Transparent-Picture.png" width="25" height="25"alt="Email" style="margin-right: 10px;"></a>
+                <a href="www.linkedin.com/in/renata-carvalho-02a718273"><img src="./imagens/linkedin.png" width="25" height="25"alt="Email" style="margin-right: 10px;"></a>
+            </small></p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
