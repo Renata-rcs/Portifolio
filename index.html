@@ -4,183 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rc-Portfólio</title>
-    
-<style>
-        *{
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-           
-            background-color: black;
-            background-attachment: fixed; /* Mantém o fundo fixo */
-            background-size: cover; /* Cobrir todo o viewport */
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: relative;
-}
-
-        
-        header{
-            display: flex;
-            justify-content: space-between;/*Divide os espaços = justify-content: space-around; e deixa colado nas laterais da página= justify-content: space-between; */
-            font-family:Arial, Helvetica, sans-serif ;
-            border-bottom: 1px solid black;
-            font-weight: bold;/*largura da font-family*/
-            height: 30px;
-            align-items: center;
-            background-color:black;
-            padding: 40px;
-            border-bottom: rgba(0, 0, 0, 0.2);
-        }
-        .sticky-nav {
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
-            top: 0;
-            background-color: black; /* Ou outra cor de fundo */
-            z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
-}
-
-        a {
-            text-decoration: none;
-            color: white;
-            margin: 20px;
-        }
-        a:hover{
-            background-color: gray;
-            padding: 20px;
-        }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        section {
-            min-height: 80vh; /* Define uma altura mínima de 80% da altura da tela */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(184, 179, 179, 0.705);
-            color: white; /* Ou outra cor legível */
-            margin-bottom:200px;
-            position: relative;
-            background-color: rgba(148, 131, 134, 0.144);
-        }
-        section + section {
-        margin-top: 200px; /* Ajuste o valor aqui para aumentar o espaço entre as seções */
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .center-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 60vh;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            color: white; /* Ou outra cor legível */
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-       
-        h2 {
-            text-align: center;
-            color:  rgb(233, 10, 158);
-            font-size: 2em;
-            
-        }
-        ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-right: 20px;
-        }
-        .sobre{
-            padding: 10px;
-            margin: 20px;
-        }
-        h1{
-             color: rgb(233, 10, 158);
-            }
-        #principal{
-                display: flex;
-                justify-content: center;    
-            }
-        #fotore{
-            border-radius: 50%;
-            width: 150px;
-        }
-        .div1, .div2{
-               align-items: center;
-        }
-     
-        .tecnologias{
-            text-align: center;
-            align-items: center;
-            padding: 10px;
-            margin: 20px;
-        }
-        .projetos-lista {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            list-style: none;
-            padding: 0;
-        }
-
-        .projeto-item {
-            width: calc(33.33% - 20px);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .projeto-titulo {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color:rgb(233, 10, 158);
-        }
-
-        .em-brever {
-            font-size: 14px;
-            color: gray;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 20px;
-        }
-        footer a {
-            margin-right: 10px;
-    }
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header  class="sticky-nav">
         <nav style="margin-left: 30px;">
-            <a href="#" style="font-size: 24px;">Portfólio</a>
+            <a href="#" style="font-size: 24px; color: pink;">Portfólio</a>
         </nav>
         <nav style="margin-left: 30px;">
             <a href="#inicio"><small>Inicio</small></a>
@@ -195,14 +24,16 @@
             <br>
             <br>
             <div id="principal">
-        
-                <div class="div1" >  
-                  <p><small>Bem vindo meu nome é</small><br>
-                <b style="font-size: 2em; color: rgb(233, 10, 158);" ><h1>Renata Carvalho</h1></b><br>
-            <small>Sou estudante de ADS</small></p>
+                <div class="div1">
+                    <small>Bem vindo meu nome é</small><br>
+                    <b style="font-size: 2em; color: rgb(233, 10, 158);">
+                        <h1><span id="typed-name"></span></h1>
+                    </b>
+                    <small>Sou estudante de ADS</small>
                 </div>
+                
                 <div class="div2">
-                    <img id="fotore" src="#" width="500px" style="border-radius: 10%; margin-left: 75px;">
+                    <img id="fotore" src="./imagens/02.png" style=" margin-left: 75px;">
                 </div>
                </div> 
         </section>
@@ -268,21 +99,24 @@
         </div>
     </footer>
     <script>
-            const nameElement = document.getElementById('animated-name');
-        const yourName = 'Renata Carvalho'; // Seu nome
 
-        let index = 0;
-
-        function showNextLetter() {
-        if (index < yourName.length) {
-            nameElement.textContent += yourName.charAt(index);
-            index++;
-            setTimeout(showNextLetter, 100); // Ajuste o tempo conforme necessário
+        var nameElement = document.getElementById("typed-name");
+        var name = "Renata Carvalho";
+        var charIndex = 0;
+        var typingSpeed = 100; // Velocidade de digitação (em milissegundos)
+    
+        function typeNextChar() {
+            if (charIndex < name.length) {
+                nameElement.innerHTML += name.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeNextChar, typingSpeed);
+            }
         }
-    }
-
-    showNextLetter();
+    
+        typeNextChar();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </body>
 
 </html>
