@@ -28,6 +28,17 @@ Aqui estão alguns dos meus projetos:
 - E-mail: renataa.rcs@gmail.com
 - LinkedIn: [Renata Carvalho](https://www.linkedin.com/in/renata-carvalho-02a718273)
 
+---
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+
+---
+
+
+Feito por [Renata Carvalho](https://github.com/Renata-rcs).
+
 
 
 
