@@ -11,9 +11,19 @@
             border: 0;
             padding: 0;
         }
-        body{
-            background-color:black;
+        html {
+            scroll-behavior: smooth;
         }
+        body {
+           
+            background-color: black;
+            background-attachment: fixed; /* Mantém o fundo fixo */
+            background-size: cover; /* Cobrir todo o viewport */
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+}
+
         
         header{
             display: flex;
@@ -24,9 +34,17 @@
             height: 30px;
             align-items: center;
             background-color:black;
-            padding: 20px;
+            padding: 40px;
             border-bottom: rgba(0, 0, 0, 0.2);
         }
+        .sticky-nav {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            background-color: black; /* Ou outra cor de fundo */
+            z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+}
+
         a {
             text-decoration: none;
             color: white;
@@ -34,6 +52,7 @@
         }
         a:hover{
             background-color: gray;
+            padding: 20px;
         }
         main {
             max-width: 1200px;
@@ -46,9 +65,12 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(184, 179, 179, 0.705);
             color: white; /* Ou outra cor legível */
-            margin-bottom: 20px;
+            margin-bottom:200px;
             position: relative;
             background-color: rgba(148, 131, 134, 0.144);
+        }
+        section + section {
+        margin-top: 200px; /* Ajuste o valor aqui para aumentar o espaço entre as seções */
         }
 
         section h2 {
@@ -60,7 +82,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 60vh; /* Ou outra altura mínima */
+            min-height: 60vh;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -72,6 +94,9 @@
        
         h2 {
             text-align: center;
+            color:  rgb(233, 10, 158);
+            font-size: 2em;
+            
         }
         ul {
             display: flex;
@@ -89,10 +114,9 @@
         h1{
              color: rgb(233, 10, 158);
             }
-        
         #principal{
                 display: flex;
-                justify-content: center;
+                justify-content: center;    
             }
         #fotore{
             border-radius: 50%;
@@ -100,8 +124,7 @@
         }
         .div1, .div2{
                align-items: center;
-   
-       }
+        }
      
         .tecnologias{
             text-align: center;
@@ -155,9 +178,9 @@
 </style>
 </head>
 <body>
-    <header>
+    <header  class="sticky-nav">
         <nav style="margin-left: 30px;">
-            <a href="#" style="font-size: 2em;"><h1>Portfólio</h1></a>
+            <a href="#" style="font-size: 24px;">Portfólio</a>
         </nav>
         <nav style="margin-left: 30px;">
             <a href="#inicio"><small>Inicio</small></a>
@@ -168,27 +191,23 @@
         </nav>
     </header>
     <main>
-        <section class="center-content" id="inicio">
-            <h2>Início</h2>
+        <section class="center-content" id="inicio" style="background-color: black;">
             <br>
             <br>
             <div id="principal">
         
                 <div class="div1" >  
-                  <p><small>Oii me chamo</small><br>
-                <b style="font-size: 200%; color: rgb(233, 10, 158);" >Renata Carvalho.</b><br>
+                  <p><small>Bem vindo meu nome é</small><br>
+                <b style="font-size: 2em; color: rgb(233, 10, 158);" ><h1>Renata Carvalho</h1></b><br>
             <small>Sou estudante de ADS</small></p>
                 </div>
                 <div class="div2">
-                    <img id="fotore" src="./imagens/image0.jpeg" width="500px" style="border-radius: 50%; margin-left: 75px;">
+                    <img id="fotore" src="#" width="500px" style="border-radius: 10%; margin-left: 75px;">
                 </div>
                </div> 
         </section>
-    
         <section class="center-content" id="sobre">
             <h2>Sobre</h2>
-            <br>
-            <br>
             <div style="text-align: center; width: 50%; margin: 0 auto;">
             <p>Olá, meu nome é <b>Renata Carvalho</b> e sou estudante de Análise e Desenvolvimento de Sistemas. Iniciei minha jornada na área de tecnologia com entusiasmo e curiosidade, buscando constantemente expandir meus conhecimentos e habilidades.</p>
             <p>Minha paixão por resolver problemas e criar soluções levou-me a mergulhar no mundo da programação. Estou constantemente aprendendo e explorando novas tecnologias, sempre ansiosa para enfrentar desafios que me ajudem a crescer como desenvolvedora.</p>
@@ -205,9 +224,9 @@
             <br>
 
             <ul>
-                <li><img src="./imagens/html5-logo.png" width="25" height="25">HTMHL 5</li>
-                <li><img src="./imagens/css3-logo-png-transparent.png" width="25" height="25">CSS 3</li>
-                <li><img src="./imagens/javascript.png" width="25" height="25">JS</li>
+                <li><img src="./imagens/html5-logo.png" width="55" height="55"></li>
+                <li><img src="./imagens/css3-logo-png-transparent.png" width="75" height="75"></li>
+                <li><img src="./imagens/javascript.png" width="50" height="50"></li>
             </ul>
                 </section>
                 <section class="center-content" id="projetos">
@@ -248,7 +267,22 @@
             </small></p>
         </div>
     </footer>
-    
+    <script>
+            const nameElement = document.getElementById('animated-name');
+        const yourName = 'Renata Carvalho'; // Seu nome
+
+        let index = 0;
+
+        function showNextLetter() {
+        if (index < yourName.length) {
+            nameElement.textContent += yourName.charAt(index);
+            index++;
+            setTimeout(showNextLetter, 100); // Ajuste o tempo conforme necessário
+        }
+    }
+
+    showNextLetter();
+    </script>
 </body>
 
 </html>
