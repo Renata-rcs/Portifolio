@@ -26,9 +26,7 @@
             <div id="principal">
                 <div class="div1">
                     <small>Bem vindo meu nome é</small><br>
-                    <b style="font-size: 2em; color: rgb(233, 10, 158);">
                         <h1><span id="typed-name"></span></h1>
-                    </b>
                     <small>Sou estudante de ADS</small>
                 </div>
                 
@@ -45,7 +43,32 @@
             <p>Além disso, adoro colaborar em projetos e trabalhar em equipe, pois acredito que a combinação de diferentes perspectivas leva a resultados mais inovadores e eficazes. Estou comprometida em melhorar minhas habilidades a cada dia e contribuir para a criação de soluções impactantes na área da tecnologia.</p>
            </div>
         </section>
-    
+        <section class="center-content" id="cursos">
+            <h2>Cursos</h2>
+            <ul class="cursos-lista">
+                <li>
+                    <p><strong>Desenvolvedor Front-end</strong></p>
+                    <p><strong>Instituição:</strong> SENAI</p>
+                    <p><strong>Descrição:</strong> Curso abrangendo tecnologias e conceitos essenciais para a construção de interfaces de usuários interativos e responsivos.</p>
+                </li>
+                <li>
+                    <p><strong>Excel Básico</strong></p>
+                    <p><strong>Instituição:</strong> SENAI</p>
+                    <p><strong>Descrição:</strong> Curso introdutório sobre o uso básico e funcionalidades do Microsoft Excel para manipulação de dados e criação de planilhas.</p>
+                </li>
+                <li>
+                    <p><strong>Lógica de Programação</strong></p>
+                    <p><strong>Instituição:</strong> SENAI</p>
+                    <p><strong>Descrição:</strong> Curso focado em desenvolver habilidades fundamentais em lógica de programação, um aspecto essencial para programadores.</p>
+                </li>
+                <li>
+                    <p><strong>Tecnologia da Informação</strong></p>
+                    <p><strong>Instituição:</strong> SENAI</p>
+                    <p><strong>Descrição:</strong> Curso abrangente sobre os princípios e fundamentos da tecnologia da informação, fornecendo uma visão geral do campo.</p>
+                </li>
+            </ul>
+            
+        </section>
         <section class="center-content" id="tecnologias">
             <h2>Tecnologias</h2>
             <br>
@@ -98,25 +121,8 @@
             </small></p>
         </div>
     </footer>
-    <script>
-
-        var nameElement = document.getElementById("typed-name");
-        var name = "Renata Carvalho";
-        var charIndex = 0;
-        var typingSpeed = 100; // Velocidade de digitação (em milissegundos)
-    
-        function typeNextChar() {
-            if (charIndex < name.length) {
-                nameElement.innerHTML += name.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeNextChar, typingSpeed);
-            }
-        }
-    
-        typeNextChar();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+<script src="script.js"></script>
 </body>
 
 </html>
