@@ -52,7 +52,7 @@ a {
 }
 a:hover{
     background-color: gray;
-    padding: 20px;
+    padding: 4px;
 }
 main {
     max-width: 1200px;
@@ -86,6 +86,7 @@ margin-top: 50px; /* Ajuste o valor aqui para aumentar o espaço entre as seçõ
     color: white; /* Ou outra cor legível */
     margin-bottom: 20px;
     position: relative;
+    margin-bottom: 150px;
 }
 
 h2 {
@@ -122,7 +123,7 @@ h1{
 
 #principal{
         display: flex;
-        justify-content: center;    
+        justify-content: center; 
 }
 
 #fotore{
