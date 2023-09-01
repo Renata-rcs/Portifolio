@@ -14,14 +14,7 @@ Aqui estão algumas das tecnologias com as quais estou trabalhando:
 - CSS3
 - JavaScript
 
-## Projetos
 
-Aqui estão alguns dos meus projetos:
-
-- [Projeto 1](link-para-o-projeto1): Uma breve descrição do projeto.
-- [Projeto 2](link-para-o-projeto2): Uma breve descrição do projeto.
-- [Projeto 3](link-para-o-projeto3): Uma breve descrição do projeto.
-- [Projeto 4](link-para-o-projeto3): Uma breve descrição do projeto.
 
 ## Contato
 
