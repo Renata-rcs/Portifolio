@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rc-Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav style="margin-left: 30px;">
-            <a href="#inicioinicio" style="font-size: 2em; color: pink; font-family: 'Roboto' sans-serif;">Portfólio</a>
-        </nav>
-        <nav style="margin-right: 30px;">
-            <a href="#sobre"><Small>Sobre</Small></a>
-            <a href="#cursos"><small>Cursos</small></a>
-            <a href="#tecnologias"><small>Tecnologias</small></a>
-            <a href="#projetos"><small>Projetos</small></a>
-            
-        </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#inicio" style="color: pink; font-size: 24px; font-weight: bold; font-family: 'Roboto' sans-serif;">Portifólio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Portifólio</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#inicio">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#cursos">Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#tecnologias">Tecnologias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projetos">Projetos</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="center-content" id="inicio" style="background-color: black;">
@@ -90,12 +114,12 @@
                     <ul class="projetos-lista">
                         <li class="projeto-item">
                             <div class="projeto-titulo">Projeto 1</div>
-                            <div class="em-brever"><a href="https://github.com/Renata-rcs/Calculadora">Projeto 1 - Calculadora</a>
+                            <div class="em-brever"><a href="https://github.com/Renata-rcs/Calculadora">Calculadora</a>
                             </a></div>
                         </li>
                         <li class="projeto-item">
                             <div class="projeto-titulo">Projeto 2</div>
-                            <div class="em-brever"><a href="https://github.com/Renata-rcs/Alinhamento">Projeto 2 - Alinhamento</a></div>
+                            <div class="em-brever"><a href="https://github.com/Renata-rcs/Alinhamento">Alinhamento</a></div>
                         </li>
                         <li class="projeto-item">
                             <div class="projeto-titulo">Projeto 3</div>
@@ -122,6 +146,7 @@
             </small></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script.js"></script>
 </body>

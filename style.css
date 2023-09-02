@@ -21,24 +21,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
-
-header{
-    display: flex;
-    justify-content: space-around;/*Divide os espaços = justify-content: space-around; e deixa colado nas laterais da página= justify-content: space-between; */
-    font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid black;
-    font-weight: bold;/*largura da font-family*/
-    height: 30px;
-    align-items: center;
-    background-color:black;
-    padding: 40px;
-    border-bottom: rgba(0, 0, 0, 0.2);
-    position: fixed;/* para ficar fixo relacionado ao body*/
-    z-index: 1;/* e para o elemento ficar a frente*/
-    width: 100%;
-
-}
 a {
     text-decoration: none;
     color: white;
