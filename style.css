@@ -68,6 +68,8 @@ section {
     margin-bottom:200px;
     position: relative;
     background-color: rgba(148, 131, 134, 0.144);
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 section + section {
@@ -213,7 +215,7 @@ footer a {
     margin-right: 10px;
 }  
 
-@media (max-width: 390px) {
+@media (max-width: 414px) {
     main{
         flex-direction: column;
     }
