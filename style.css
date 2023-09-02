@@ -25,7 +25,7 @@ body {
 
 header{
     display: flex;
-    justify-content: space-between;/*Divide os espaços = justify-content: space-around; e deixa colado nas laterais da página= justify-content: space-between; */
+    justify-content: space-around;/*Divide os espaços = justify-content: space-around; e deixa colado nas laterais da página= justify-content: space-between; */
     font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid black;
     font-weight: bold;/*largura da font-family*/
@@ -34,17 +34,11 @@ header{
     background-color:black;
     padding: 40px;
     border-bottom: rgba(0, 0, 0, 0.2);
-   
+    position: fixed;/* para ficar fixo relacionado ao body*/
+    z-index: 1;/* e para o elemento ficar a frente*/
+    width: 100%;
 
 }
-.sticky-nav {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: black; /* Ou outra cor de fundo */
-    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
-}
-
 a {
     text-decoration: none;
     color: white;
