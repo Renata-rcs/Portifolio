@@ -21,6 +21,7 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -36,23 +37,21 @@ main {
     padding: 20px;
 }
 section {
-    min-height: 80vh; /* Define uma altura mínima de 80% da altura da tela */
-    padding: 20px;
+    min-height: 80vh;
+    padding: 80px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(184, 179, 179, 0.705);
-    color: white; /* Ou outra cor legível */
-    margin-bottom:200px;
-    position: relative;
+    color: white;
     background-color: rgba(148, 131, 134, 0.144);
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 200px 30px; /* Isso define as margens superior e inferior como 200px e as margens esquerda e direita como 30px */
+    border: 40px solid transparent; /* Adiciona uma borda transparente de 40px */
 }
 
 section + section {
-margin-top: 50px; /* Ajuste o valor aqui para aumentar o espaço entre as seções */
+    margin-top: 50px;
 }
 
-.center-content {
+
+#center-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +72,7 @@ h2 {
     color:  rgb(233, 10, 158);
     font-size: 2em;
     margin-bottom: 20px;
+    font-weight: bold;
     
 }
 
