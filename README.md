@@ -23,11 +23,6 @@ Aqui estão algumas das tecnologias com as quais estou trabalhando:
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
-
----
 
 
 Feito por [Renata Carvalho](https://github.com/Renata-rcs).
